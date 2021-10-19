@@ -1,0 +1,143 @@
+* {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 18px;
+}
+
+body {
+  background-color: rgb(2, 2, 61);
+  background-image: url("images/bg-desktop.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 50%;
+  background-position: bottom;
+}
+
+.datastorage__container {
+  margin: auto;
+  margin-top: 20%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.datastorage__logo {
+  background-color: hsl(228, 56%, 26%);
+  max-width: 400px;
+  max-height: 300px;
+  min-width: 300px;
+  min-height: 150px;
+  border-style: none;
+  border-top-right-radius: 70px;
+  padding: 2% 0% 0% 2%;
+  margin-right: 2%;
+}
+
+.bottom__icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.img__bg {
+  display: flex;
+  align-items: center;
+  background-color: hsl(229, 57%, 11%);
+  padding: 10px 10px 10px 10px;
+  border-style: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 5%;
+  margin-top: 10%;
+}
+
+.slider__value,
+.slider__remaining__value,
+.slider__minimum__value,
+.slider__maximum__value {
+  font-weight: 700;
+  color: white;
+}
+
+.datastorage__slider__container {
+  margin-top: 2%;
+  max-width: 600px;
+  min-width: 500px;
+  max-height: 150px;
+  padding: 2% 3% 2% 3%;
+  background-color: hsl(228, 56%, 26%);
+  border-style: none;
+  border-radius: 10px;
+  position: relative;
+}
+.slider__values__under {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.datastorage__leftover {
+  position: absolute;
+  padding: 3% 4% 3% 4%;
+  color: blue;
+  background-color: white;
+  border-style: none;
+  border-radius: 10px;
+  max-width: 150px;
+  max-height: 50px;
+  text-align: center;
+  align-items: center;
+  transition: 0.3s;
+  min-width: 150px;
+  min-height: 50px;
+  top: -50%;
+  left: 58%;
+}
+
+.slider__remaining__value {
+  color: blue;
+  text-transform: unset;
+  font-size: 45px;
+  padding-right: 4%;
+}
+
+.slider__remaining__triangle {
+  position: relative;
+  left: 89.5%;
+  bottom: 100%;
+  width: 0;
+  height: 0;
+  border-top: 40px solid white;
+  border-left: 40px solid transparent;
+}
+
+.progress2 {
+  padding: 6px;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25),
+    0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progress-bar2 {
+  height: 18px;
+  border-radius: 30px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.05)
+  );
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+}
+
+.progress-moved .progress-bar2 {
+  width: 85%;
+  background-image: linear-gradient(
+    to right,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
+}

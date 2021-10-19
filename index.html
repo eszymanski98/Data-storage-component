@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link href="styles.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="https://fonts.google.com/specimen/Raleway" rel="stylesheet" />
+
+    <title>Frontend Mentor | Fylo data storage component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="datastorage__container">
+      <div class="datastorage__logo">
+        <img src="/images/logo.svg" />
+        <div class="bottom__icons">
+          <div class="img__bg">
+            <img src="/images/icon-document.svg" />
+          </div>
+          <div class="img__bg">
+            <img src="/images/icon-folder.svg" />
+          </div>
+          <div class="img__bg">
+            <img src="images/icon-upload.svg" />
+          </div>
+        </div>
+      </div>
+      <div class="datastorage__slider__container">
+        <div class="datastorage__slider__toptext">
+          You’ve used <span class="slider__value">815 GB</span> of your storage
+        </div>
+        <div class="bar__container">
+          <div class="progress2 progress-moved">
+            <div class="progress-bar2"></div>
+          </div>
+        </div>
+        <div class="datastorage__leftover">
+          <span class="slider__remaining__value">185</span>GB Left
+          <div class="slider__remaining__triangle"></div>
+        </div>
+        <div class="slider__values__under">
+          <div class="slider__minimum__value">0 GB</div>
+          <div class="slider__maximum__value">1000 GB</div>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/eszymanski98">Ernest Szymański</a>.
+    </div>
+  </body>
+</html>
